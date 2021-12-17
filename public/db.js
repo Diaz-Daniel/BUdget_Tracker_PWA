@@ -20,4 +20,14 @@ request.onsuccess = function (e) {
   }
 };
 
+function saveRecord(record) {
+  // Open a transaction on your BudgetStore db
+  let transaction = db.transaction(["BudgetStore"], "readwrite");
+
+  // access your BudgetStore object
+  const store = transaction.objectStore("BudgetStore");
+
+  store.add(record);
+}
+
 window.addEventListener("online", checkDatabase);

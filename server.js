@@ -3,7 +3,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 //https://safe-ravine-76830.herokuapp.com/
-const PORT = 3306 || process.env.PORT;
+const PORT = 3000 || process.env.PORT;
 const MONGODB_URI =
   process.env.MONGODB_URI || "mongodb://localhost/Transaction";
 

@@ -12,7 +12,7 @@ request.onupgradeneeded = function (e) {
 request.onerror = function (e) {
   console.log(`Woops! ${e.target.errorCode}`);
 };
-
+//comment
 request.onsuccess = function (e) {
   db = e.target.result;
   if (navigator.onLine) {
